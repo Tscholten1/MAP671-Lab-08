@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Cancer Mortality by U.S. County (Five-year average)</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            font-family: 'Open Sans', sans-serif;
+            color: #3d3d3d;
+        }
+
+        section {
+            /* width: 960px; */
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            letter-spacing: .04em;
+        }
+
+        h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.0em;
+            letter-spacing: .02em;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.4em;
+        }
+
+        a {
+            color: #005daa;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 10px 0
+        }
+
+        #map {
+            width: 100%;
+            margin: 0px auto;
+            /* border: 2px solid #d3d3d3; */
+        }
+
+        /* add custom style class here */
+    </style>
+</head>
+
+<body>
+    <div id='map'>
+        <!-- Add your custom iframe here -->
+        <iframe width="100%" height="520" frameborder="0" src="https://tscholten.carto.com/builder/341512d1-49ae-48d5-8be3-f694a31f3c03/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+        <!--
+		<iframe width="100%" height="540" frameborder="0" src="https://nmp.carto.com/u/boyd/builder/4b639126-b4c0-11e6-b9b9-0e3ebc282e83/embed"
+		    allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+-->
+    </div>
+    <section>
+        <a href="https://tscholten.carto.com/builder/341512d1-49ae-48d5-8be3-f694a31f3c03/embed">Enlarge map</a>
+        <!-- This is an HTML comment. Find the comments below and follow the instructions. -->
+
+        <h1>Cancer Death Rates by County, 2009-2013</h1>
+
+        <!-- Add you information below -->
+        <h2>Web map created by Tom Scholten</h2>
+
+        <h3>Data source and method</h3>
+        <p>Data were downloaded from the National Cancer Institute’s State Cancer Profiles website (
+            <a href="(http://www.statecancerprofiles.cancer.gov/">statecancerprofiles.cancer.gov</a>) on 11/27/2016. The data describe cancer rates for all cancer sites by mortality, for all races, sexes, and ages, averaged over the years of 2009 - 2013. Rates are the number of deaths per 100,000 people.</p>
+        <p>Data was processed with QGIS 3.6 (Noosa) on a Windows 10 OS and the map is hosted on CARTO.</p>
+
+        <ul>
+        </ul>
+        <p><b>Discussion</b></p>
+        <p>The death rate from cancer in the US has declined steadily over the past 25 years, according to annual statistics reporting from the American Cancer Society. As of 2016, the cancer death rate for men and women combined had fallen 27% from its peak in 1991. This decline translates to about 1.5% per year and more than 2.6 million deaths avoided between 1991 and 2016. The drop in cancer mortality is mostly due to steady reductions in smoking and advances in early detection and treatment. But not all populations are benefitting. Although the racial gap in cancer deaths is slowly narrowing, socioeconomic inequalities are widening. “Cancer Statistics, 2019,” published in the American Cancer Society’s journal CA: A Cancer Journal for Clinicians, estimates the numbers of new cancer cases and deaths expected in the US this year. The estimates are some of the most widely quoted cancer statistics in the world. The information is also released in a companion report, Cancer Facts and Figures 2019, available on the interactive website, the Cancer Statistics Center. A total of 1,762,450 new cancer cases and 606,880 deaths from cancer are expected to occur in the US in 2019. During the most recent decade of available data (2006 – 2015), the rate of new cancer diagnoses decreased by about 2% per year in men and stayed about the same in women. The cancer death rate (2007 – 2016) declined by 1.4% per year in women and 1.8% per year in men. </p>
+
+        <p>Source: <a>"American Cancer Society"</a></p>
+
+        <p>Of note in the underlying data is that the top two counties with the highest percent over the five-year average are in South Dakota (Sanborn and McPherson) The geographic distribution of elevated cancer incidents remain in the southern U.S. particularly in Kentucky, West Virginia, Georgia, Arkansas, and Tennessee. Factors such as low socio-economic status, low education levels, elevated levels of opoid use, lifestyle factors, and the legacy of tobacco farming all factor into the persistent presence of elevant cancer rates in this region of the U.S.</p>
+
+        <p><b>Key elements of this lesson/lab</b></p>
+        <li>Understanding data types and sourcing (local files, cloud-based files from DropBox) that can be used in the Carto mapping environment</li>
+        <li>Loading data from remote (e.g. web-based) data sources</li>
+        <li>Working in and with Carto Data and Map views</li>
+        <li>Exposure to the SQL working environment that allows customization not available in other areas of the Carto environment</li>
+        <li>The Carto Style layer</li>
+        <li>Creating and customizing a thematic map</li>
+        <li>Understanding the two primary ways of sharing a map via the iframe method that inserts the map into a web page, or by using a URL link</li>
+
+        <ul>
+            <!-- Change the following contacts to your personal brand -->
+            <li>Visit my <a href='https://tscholten1.github.io/mapwurks/'>mapping portfolio</a>.</li>
+            <li>Visit my
+                <a href='https://github.com/Tscholten1?tab=repositories/'>GitHub projects</a>.
+            </li>
+
+        </ul>
+    </section>
+</body>
+
+</html>
